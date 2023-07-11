@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <div>Footer</div>;
+  return (
+    <footer className="flex justify-center bg-blue-300 p-4 text-white">
+      <p className="text-xl">Made By Danny Jiang</p>
+    </footer>
+  );
 }

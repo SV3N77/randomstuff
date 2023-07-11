@@ -1,8 +1,6 @@
 import Header from "@/components/Header";
 import "./globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Random Stuff",
@@ -16,9 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="flex min-h-screen flex-col">
         <Header />
-        <div className="flex min-h-screen flex-col">{children}</div>
+        <div className="grow">{children}</div>
+        <Footer />
       </body>
     </html>
   );
